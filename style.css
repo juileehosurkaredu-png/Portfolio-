@@ -1,0 +1,744 @@
+
+/* =========================================
+   JUILEE PRAVIN HOSURKAR
+   PERSONAL RESUME WEBSITE
+   DOMINE + LATO | NAVY, BEIGE & GOLD
+========================================= */
+
+
+/* 01. GENERAL SETTINGS */
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F8F5ED;
+    color: #292D33;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Domine', serif;
+    color: #172B46;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+
+/* 02. NAVIGATION BAR */
+
+.site-header {
+    width: 100%;
+    min-height: 80px;
+    padding: 20px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #172B46;
+    color: #F8F5ED;
+}
+
+.site-name {
+    font-family: 'Domine', serif;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.site-header nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.site-header nav a {
+    font-size: 13px;
+    color: #F8F5ED;
+    transition: color 0.3s ease;
+}
+
+.site-header nav a:hover {
+    color: #D5B879;
+}
+
+.site-header .nav-contact {
+    border: 1px solid #D5B879;
+    padding: 9px 19px;
+    color: #D5B879;
+}
+
+
+/* 03. HERO SECTION */
+
+.hero {
+    min-height: 620px;
+    padding: 90px 12%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 75px;
+    background-color: #F1EBDD;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #A58B58;
+    text-transform: uppercase;
+}
+
+.hello {
+    margin-top: 35px;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #172B46;
+}
+
+.hero h1 {
+    font-size: clamp(65px, 9vw, 110px);
+    line-height: 1.2;
+    margin: 5px 0 20px;
+    letter-spacing: -5px;
+}
+
+.hero h1 span {
+    color: #B99B5E;
+}
+
+.tagline {
+    font-family: 'Domine', serif;
+    font-size: 21px;
+    color: #172B46;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 470px;
+    font-size: 15px;
+    color: #64615B;
+    line-height: 1.9;
+    margin-bottom: 32px;
+}
+
+.text-link {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    color: #172B46;
+    border-bottom: 1px solid #B99B5E;
+    padding-bottom: 7px;
+}
+
+.hero-photo {
+    text-align: center;
+}
+
+.hero-photo img {
+    width: 100%;
+    max-width: 340px;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+    border: 9px solid #F8F5ED;
+    outline: 1px solid #D5B879;
+}
+
+.photo-caption {
+    margin-top: 17px;
+    font-family: 'Domine', serif;
+    font-size: 12px;
+    font-style: italic;
+    color: #777066;
+}
+
+
+/* 04. SECTION HEADINGS */
+
+.section {
+    padding: 90px 12%;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 43px;
+    margin-top: 15px;
+    line-height: 1.3;
+}
+
+.section-intro {
+    font-size: 15px;
+    color: #716D65;
+    max-width: 650px;
+}
+
+
+/* 05. ABOUT SECTION */
+
+.about-section {
+    padding: 100px 12%;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 90px;
+    background-color: #172B46;
+    color: #F8F5ED;
+}
+
+.about-section .section-heading h2 {
+    color: #F8F5ED;
+}
+
+.about-section .gold-text {
+    color: #D5B879;
+}
+
+.about-content h3 {
+    color: #D5B879;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    color: #E2DED5;
+    font-size: 14px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.about-content .objective-heading {
+    margin-top: 35px;
+}
+
+
+/* =========================================
+   06. EDUCATION SECTION
+========================================= */
+
+.education-section {
+    padding: 95px 10%;
+    background-color: #F8F5ED;
+}
+
+.education-section .section-heading {
+    margin-bottom: 20px;
+}
+
+.education-section .section-heading h2 {
+    font-size: 45px;
+}
+
+.education-section .section-intro {
+    margin: 15px 0 35px;
+    font-size: 15px;
+    color: #716D65;
+}
+
+
+/* TABLE OUTER CONTAINER */
+
+.education-section .table-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    overflow-x: auto;
+    margin: 0 auto;
+    border: 1px solid #D8CBB5;
+    box-shadow: 0 8px 25px rgba(23, 43, 70, 0.06);
+}
+
+
+/* TABLE STRUCTURE */
+
+.education-section .education-table {
+    width: 100%;
+    min-width: 700px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #F8F5ED;
+    text-align: left;
+}
+
+
+/* COLUMN WIDTHS */
+
+.education-section .education-table th:nth-child(1),
+.education-section .education-table td:nth-child(1) {
+    width: 34%;
+}
+
+.education-section .education-table th:nth-child(2),
+.education-section .education-table td:nth-child(2) {
+    width: 44%;
+}
+
+.education-section .education-table th:nth-child(3),
+.education-section .education-table td:nth-child(3) {
+    width: 22%;
+}
+
+
+/* TABLE HEADER */
+
+.education-section .education-table thead {
+    background-color: #172B46;
+}
+
+.education-section .education-table th {
+    padding: 20px 22px;
+    color: #D5B879;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border: none;
+    vertical-align: middle;
+}
+
+
+/* TABLE ROWS */
+
+.education-section .education-table td {
+    padding: 23px 22px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #444A51;
+    border-bottom: 1px solid #E2D9CA;
+    vertical-align: middle;
+    overflow-wrap: break-word;
+}
+
+.education-section .education-table td:first-child {
+    color: #172B46;
+    font-weight: 700;
+}
+
+.education-section .education-table tbody tr:nth-child(even) {
+    background-color: #EFE9DC;
+}
+
+.education-section .education-table tbody tr:nth-child(odd) {
+    background-color: #F8F5ED;
+}
+
+.education-section .education-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.education-section .education-table tbody tr:hover {
+    background-color: #E8DFCD;
+    transition: background-color 0.3s ease;
+}
+
+
+/* ACADEMIC SCORE PANEL */
+
+.education-section .academic-note {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 35px;
+    padding: 27px 35px;
+    background-color: #172B46;
+}
+
+.education-section .academic-note div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.education-section .score {
+    font-family: 'Domine', serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: #D5B879;
+}
+
+.education-section .score-label {
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #F8F5ED;
+}
+
+
+/* =========================================
+   07. EXPERIENCE SECTION
+========================================= */
+
+.experience-section {
+    background-color: #F0EBDD;
+}
+
+.experience-section .section-heading {
+    margin-bottom: 45px;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    gap: 30px;
+    padding: 30px 0;
+    border-bottom: 1px solid #D9CFBD;
+}
+
+.experience-item:first-child {
+    padding-top: 0;
+}
+
+.experience-number {
+    font-family: 'Domine', serif;
+    font-size: 28px;
+    color: #B99B5E;
+}
+
+.experience-item h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.role-place {
+    font-size: 12px;
+    color: #A1844E;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.experience-item div > p:last-child {
+    font-size: 14px;
+    color: #65615A;
+    line-height: 1.9;
+    max-width: 750px;
+}
+
+
+/* 08. COLLEGE INVOLVEMENT */
+
+.involvement-section {
+    background-color: #F8F5ED;
+}
+
+.involvement-list {
+    margin-top: 35px;
+    border-top: 1px solid #D9CFBD;
+}
+
+.involvement-list p {
+    padding: 22px 0;
+    border-bottom: 1px solid #D9CFBD;
+    font-size: 15px;
+    color: #343B43;
+}
+
+.involvement-list span {
+    font-family: 'Domine', serif;
+    color: #B99B5E;
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+
+/* 09. SKILLS SECTION */
+
+.skills-section {
+    background-color: #172B46;
+}
+
+.skills-section .section-heading h2 {
+    color: #F8F5ED;
+}
+
+.skills-section .eyebrow {
+    color: #D5B879;
+}
+
+.skills-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    margin-top: 45px;
+}
+
+.skills-layout h3 {
+    color: #D5B879;
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tags span {
+    display: inline-block;
+    padding: 10px 17px;
+    border: 1px solid #68778A;
+    color: #F8F5ED;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.skill-tags span:hover {
+    background-color: #D5B879;
+    color: #172B46;
+    border-color: #D5B879;
+}
+
+
+/* 10. ACHIEVEMENTS SECTION */
+
+.achievements-section {
+    background-color: #F0EBDD;
+}
+
+.achievement-content {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 35px;
+    padding: 28px 0;
+    border-bottom: 1px solid #D9CFBD;
+}
+
+.achievement-year {
+    font-family: 'Domine', serif;
+    color: #A1844E;
+    font-size: 15px;
+}
+
+.achievement-content h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.achievement-content div p {
+    font-size: 14px;
+    color: #66615A;
+}
+
+
+/* 11. LANGUAGES SECTION */
+
+.languages-section {
+    padding: 85px 12%;
+    background-color: #172B46;
+    text-align: center;
+}
+
+.languages-section .eyebrow {
+    color: #D5B879;
+}
+
+.languages-section h2 {
+    color: #F8F5ED;
+    font-size: 35px;
+    margin: 20px 0 35px;
+}
+
+.language-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.language-list span {
+    padding: 10px 25px;
+    border: 1px solid #B99B5E;
+    color: #F8F5ED;
+    font-size: 13px;
+}
+
+
+/* 12. FOOTER */
+
+.site-footer {
+    background-color: #101F33;
+    color: #F8F5ED;
+    padding: 35px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.site-footer p:first-child {
+    font-family: 'Domine', serif;
+    font-size: 17px;
+}
+
+.site-footer p:nth-child(2) {
+    font-size: 12px;
+    color: #C8C3B9;
+}
+
+.site-footer a {
+    color: #D5B879;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   13. RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+    .site-header {
+        padding: 20px 5%;
+    }
+
+    .site-header nav {
+        gap: 17px;
+    }
+
+    .hero {
+        padding: 70px 7%;
+        gap: 35px;
+    }
+
+    .section,
+    .about-section {
+        padding: 75px 8%;
+    }
+
+    .education-section {
+        padding: 75px 6%;
+    }
+
+    .skills-layout {
+        gap: 35px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .site-header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 5%;
+    }
+
+    .site-header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .site-name {
+        font-size: 17px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 65px 7%;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-photo img {
+        height: 350px;
+        max-width: 290px;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .education-section {
+        padding: 65px 6%;
+    }
+
+    .education-section .education-table {
+        min-width: 700px;
+    }
+
+    .education-section .academic-note {
+        gap: 35px;
+        padding: 22px;
+    }
+
+    .education-section .score {
+        font-size: 27px;
+    }
+
+    .experience-item {
+        grid-template-columns: 40px 1fr;
+        gap: 15px;
+    }
+
+    .skills-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .achievement-content {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .languages-section h2 {
+        font-size: 27px;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
